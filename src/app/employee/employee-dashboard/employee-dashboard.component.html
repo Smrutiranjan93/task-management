@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-3 rounded-start py-2 bg-white">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              routerLink="quiz"
+              routerLinkActive="active"
+              >Quiz</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="users" routerLinkActive="active"
+              >Employee</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="question" routerLinkActive="active"
+              >Question</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9 rounded-end py-2 bg-white">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  

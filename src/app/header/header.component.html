@@ -1,0 +1,83 @@
+<div
+  class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0"
+>
+  <nav
+    class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0"
+  >
+    <a href="index.html" class="navbar-brand">
+      <img
+        class="img-fluid"
+        src="assets/img/logos.png"
+        alt=""
+        style="width: 139px; height: 54px; border-radius: 5px"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      id="navbarCollapse"
+      style="height: 0px"
+    >
+      <div class="navbar-nav ms-auto py-0">
+        <a routerLink="/" class="nav-item nav-link active">Home</a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            >About</a
+          >
+          <div class="dropdown-menu m-0">
+            <a routerLink="/aboutus" class="dropdown-item">Aboutus</a>
+            <a routerLink="/company" class="dropdown-item">Company</a>
+
+            <a routerLink="/leadership-team" class="dropdown-item"
+              >Leadership Team</a
+            >
+            <a routerLink="/keyproject" class="dropdown-item">Key Project</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            >Product</a
+          >
+
+          <div class="dropdown-menu m-0">
+            <a routerLink="/product1" class="dropdown-item">Product-1</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            >Resources</a
+          >
+          <div class="dropdown-menu m-0">
+            <a routerLink="/news" class="dropdown-item">News</a>
+            <a routerLink="/blogs" class="dropdown-item">Blogs</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+            >Service</a
+          >
+          <div class="dropdown-menu m-0">
+            <a routerLink="/finance" class="dropdown-item">Finance</a>
+            <a routerLink="/services" class="dropdown-item">Services</a>
+          </div>
+        </div>
+
+        <a routerLink="/career" class="nav-item nav-link">Career</a>
+        <a routerLink="/partner" class="nav-item nav-link">Contact</a>
+        <a
+          routerLink="/login"
+          style="border-radius: 40px; background-color: #fd5d14"
+          class="nav-item nav-link text-white"
+          >Login</a
+        >
+      </div>
+    </div>
+  </nav>
+</div>

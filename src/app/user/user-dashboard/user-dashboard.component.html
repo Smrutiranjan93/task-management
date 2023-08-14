@@ -1,0 +1,129 @@
+<div class="content-wrapper" style="min-height: 520px ">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>Dashboard</h1>
+    <!-- <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li class="active">Dashboard</li>
+      </ol> -->
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <!-- Main row -->
+    <div class="row" style="height: 8rem">
+      <div class="col-md-3">
+        <!-- small box -->
+        <div class="small-box bg-aqua card">
+          <div class="inner">
+            <br />
+            <h3 style="font-size: 15px" class="text-center">Assigned Request</h3>
+
+            <p style="font-size: 20px" class="text-center">
+              <!-- <b> {{ statics.ASSIGNED? statics.ASSIGNED : 0  }} </b> -->
+            </p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-bag"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-md-3" >
+        <!-- small box -->
+        <div class="small-box bg-green card">
+          <div class="inner">
+            <br />
+            <h3 style="font-size: 15px" class="text-center">
+              Approved Request
+            </h3>
+
+            <p style="font-size: 20px" class="text-center">
+              <!-- <b> {{ statics.APPROVED? statics.APPROVED : 0  }} </b> -->
+            </p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-stats-bars"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-md-3">
+        <!-- small box -->
+        <div class="small-box bg-yellow card">
+          <div class="inner">
+            <br />
+            <h3 style="font-size: 14px" class="text-center">
+              Rejected Request
+            </h3>
+
+            <p style="font-size: 20px" class="text-center">
+              <!-- <b> {{ statics.REJECTED ? statics.REJECTED : 0 }} </b> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-md-3">
+        <!-- small box -->
+        <div class="small-box bg-red card">
+          <div class="inner">
+            <br />
+            <h3 style="font-size: 15px" class="text-center">Submitted Request</h3>
+
+            <p style="font-size: 20px" class="text-center">
+              <!-- <b>{{ statics.SUBMITTED ? statics.SUBMITTED : 0 }}  </b> -->
+            </p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-pie-graph"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+      <!-- ./col -->
+      <div class="col-md-3">
+        <!-- small box -->
+        <div class="small-box bg-secondary card">
+          <div class="inner">
+            <br />
+            <h3 style="font-size: 15px" class="text-center">Generated Request</h3>
+
+            <p style="font-size: 20px" class="text-center">
+              <!-- <b>{{ statics.GENERATED? statics.GENERATED : 0  }} </b> -->
+            </p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-pie-graph"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+      <!-- ./col -->
+      <div class="col-md-3">
+        <!-- small box -->
+        <div class="small-box bg-primary card">
+          <div class="inner">
+            <br />
+            <h3 style="font-size: 15px" class="text-center">Cancel Request</h3>
+
+            <p style="font-size: 20px" class="text-center">
+              <!-- <b>{{ statics.CANCELLED? statics.CANCELLED : 0  }} </b> -->
+            </p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-pie-graph"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+    </div>
+    <!-- /.row (main row) -->
+    <div id="barchart_material"></div>
+  </section>
+  <!-- /.content -->
+  <div class="col-md-9">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

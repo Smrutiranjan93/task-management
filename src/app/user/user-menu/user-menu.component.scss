@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.border-left {
+  border-left: 2px solid var(--primary) !important;
+}
+
+.sidebar {
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 45%);
+  z-index: 99;
+}
+
+/* sidebar for small screens */
+@media screen and (max-width: 767px) {
+  .sidebar {
+    max-width: 18rem;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-out;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  /* Show profile icon and name on mobile view */
+  #profile-dropdown {
+    display: flex;
+  }
+
+  /* Adjust spacing between profile icon and name */
+  #profile-dropdown {
+    margin-right: 1rem;
+  }
+
+  /* Align the profile dropdown to the left of the toggle bar */
+  .flex-grow-1 {
+    justify-content: flex-start;
+  }
+
+  /* Show dropdown menu on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Style for dropdown items */
+  .dropdown-item {
+    padding: 0.5rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+}
+
+.list-group-item {
+  background-color: black;
+  color: #fff;
+}
+
+.list-group-item:hover {
+  background-color: #fd5d14;
+  color: #fff;
+}
+
+/* Style for dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+  display: block;
+  padding: 0.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Add responsive styles */
+@media (max-width: 300px) {
+  .dropdown {
+    display: none;
+  }
+
+  .d-lg-none {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .dropdown-menu-left {
+    right: initial;
+  }
+  .dropdown .profile-name {
+    display: none; /* Hide profile name on larger screens */
+  }
+
+  .dropdown .btn.d-lg-none {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .dropdown .btn.d-lg-none .profile-name {
+    display: block; /* Display profile name on mobile view */
+  }
+}

@@ -1,0 +1,98 @@
+<!-- <div id="container"  > -->
+  <div class="container loginForm" style="margin-top: 8rem">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="con">
+        <i class="fa fa-home" aria-hidden="true" routerLink="/body"></i>
+
+        <header class="head-form">
+          <h2 class="text-white">Log In</h2>
+        </header>
+        <br />
+
+       
+       
+        
+        <div class="field-set">
+          <input
+            class="form-control input-box"
+            type="text"
+            placeholder="Username"
+            id="username"
+            [ngClass]="{ 'is-invalid': submitted && (f['userName'].errors || loginForm.errors?.['invalidCredentials']) }"
+            formControlName="userName"
+          />
+          <div
+            *ngIf="submitted && f['userName'].errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f['userName'].errors['required']">
+              Username is required
+            </div>
+          </div>
+
+          <br />
+
+          <input
+            class="form-control input-box"
+            type="password"
+            placeholder="Password"
+            id="password"
+            [ngClass]="{ 'is-invalid': submitted && (f['password'].errors || loginForm.errors?.['invalidCredentials']) }"
+            formControlName="password"
+          />
+         
+          <div
+            *ngIf="submitted && f['password'].errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f['password'].errors['required']">
+              Password is required
+            </div>
+          </div>
+
+          <br />
+          <div *ngIf="error" class="alert alert-danger" role="alert">
+            {{ error }}
+          </div>
+          <!-- <div>
+            <ngx-recaptcha2
+              #captchaElem
+              [siteKey]="siteKey"
+              formControlName="recaptcha"
+            >
+            </ngx-recaptcha2>
+          </div> -->
+
+          <!-- Use custom CSS styles to indicate loading -->
+          <button
+            [disabled]="loading || loginForm.invalid"
+            class="btn btn-primary log-in"
+            style="width: 100%"
+          >
+            <span *ngIf="!loading">Log In</span>
+          </button>
+
+          <!-- Loading -->
+          <div class="d-flex justify-content-center" *ngIf="loading">
+            <div class="overlay"></div>
+            <div class="spinner-border" role="status">
+            </div>
+          </div>
+        </div>
+       
+        <div class="other">
+          <button
+            class="btn submits frgt-pass"
+            routerLink="/forgotPassword"
+            style="font-size: 10px"
+          >
+            Forgot/Reset Password
+          </button>
+          <button class="btn submits sign-up" routerLink="/signUp" (click)="transfer()">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+<!-- </div> -->

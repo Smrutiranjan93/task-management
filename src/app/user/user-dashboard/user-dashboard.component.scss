@@ -1,0 +1,258 @@
+.content-wrapper {
+    min-height: 250px;
+    background-color: #ecf0f5;
+    z-index: 800;
+  }
+  .skin-blue .content-header {
+    background: transparent;
+  }
+  .content-header {
+    position: relative;
+    padding: 15px 15px 0 15px;
+  }
+  .content-header > .breadcrumb {
+    position: relative;
+    margin-top: 5px;
+    top: 0;
+    right: 0;
+    float: none;
+    background: #d2d6de;
+    padding-left: 10px;
+  }
+  .breadcrumb > li {
+    display: inline-block;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  user agent stylesheet li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  .content {
+    min-height: 250px;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .small-box h3,
+  .small-box p {
+    z-index: 5;
+  }
+  
+  .small-box h3 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+  }
+  .uk-h3,
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  .uk-h1,
+  .uk-h2,
+  .uk-h3,
+  .uk-h4,
+  .uk-h5,
+  .uk-h6,
+  .uk-heading-2xlarge,
+  .uk-heading-large,
+  .uk-heading-medium,
+  .uk-heading-small,
+  .uk-heading-xlarge,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    color: #333;
+    text-transform: none;
+  }
+  .bg-green,
+  .callout.callout-success,
+  .alert-success,
+  .label-success,
+  .modal-success .modal-body {
+    background-color: #00a65a !important;
+  }
+  /* @media (max-width: 767px)
+  .small-box p {
+      font-size: 12px;
+  } */
+  
+  .small-box h3,
+  .small-box p {
+    z-index: 5;
+  }
+  .small-box p {
+    font-size: 15px;
+    color: #fff;
+  }
+  * + address,
+  * + dl,
+  * + fieldset,
+  * + figure,
+  * + ol,
+  * + p,
+  * + pre,
+  * + ul {
+    margin-top: 20px;
+  }
+  address,
+  dl,
+  fieldset,
+  figure,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: 0 0 20px 0;
+  }
+  p {
+    margin: 0 0 10px;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  user agent stylesheet p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  
+  /* @media (max-width: 767px)
+  .small-box {
+      text-align: center;
+  } */
+  body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .bg-aqua,
+  .callout.callout-info,
+  .alert-info,
+  .label-info,
+  .modal-info .modal-body {
+    background-color: #00c0ef !important;
+  }
+  .small-box:hover {
+    text-decoration: none;
+    color: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .bg-yellow,
+  .callout.callout-warning,
+  .alert-warning,
+  .label-warning,
+  .modal-warning .modal-body {
+    background-color: #f39c12 !important;
+  }
+  
+  .small-box {
+    text-align: center;
+  }
+  .bg-red,
+  .callout.callout-danger,
+  .alert-danger,
+  .alert-error,
+  .label-danger,
+  .modal-danger .modal-body {
+    background-color: #dd4b39 !important;
+  }
+  .small-box .inner h3 {
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .small-box {
+    display: block;
+    position: relative;
+  
+    background-color: #d85d0c;
+    border-radius: 4px;
+  
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #00838d;
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.25s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(21);
+    }
+  }
+  
+  .small-box :hover {
+    p {
+      transition: all 0.3s ease-out;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    h3 {
+      transition: all 0.3s ease-out;
+      color: #ffffff;
+    }
+  }
+  
+  .card {
+    font-weight: bold;
+    padding: 1em;
+    text-align: right;
+    color: #181a1a;
+    box-shadow: 0 1px 5px #00000099;
+    border-radius: 10px;
+    /* background: #00838d; */
+    background-size: cover;
+    position: relative;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+    margin: 8px;
+  }
+  
+  .card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+  }
+  
